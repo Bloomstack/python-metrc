@@ -10,7 +10,7 @@ from python_metrc import METRC
 HOST = 'localhost'
 PORT = 8000
 BASE_URL = 'http://{}:{}'.format(HOST, PORT)
-PATH = '/resource/v2/endpoint/extension/'
+PATH = '/resource/v2/endpoint/extension'
 URL = BASE_URL + PATH
 
 
