@@ -7,8 +7,8 @@ A light Python wrapper around the METRC Web API
 .. image:: https://img.shields.io/pypi/v/python_metrc.svg
         :target: https://pypi.python.org/pypi/python_metrc
 
-.. image:: https://img.shields.io/travis/DigiThinkIT/python_metrc.svg
-        :target: https://travis-ci.org/DigiThinkIT/python_metrc
+.. image:: https://img.shields.io/travis/DigiThinkIT/python-metrc.svg
+        :target: https://travis-ci.org/DigiThinkIT/python-metrc
 
 Getting Started
 ---------------
