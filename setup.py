@@ -11,7 +11,7 @@ with open('README.rst') as readme_file:
 with open('HISTORY.rst') as history_file:
     history = history_file.read()
 
-requirements = ['Click>=6.0', 'hammock>=0.2.4', ]
+requirements = ['hammock>=0.2.4', ]
 setup_requirements = ['pytest-runner', ]
 test_requirements = ['pytest', ]
 
@@ -32,11 +32,6 @@ setup(
         'Programming Language :: Python :: 3.7',
     ],
     description="A light Python wrapper around the METRC Web API",
-    entry_points={
-        'console_scripts': [
-            'python_metrc=python_metrc.cli:main',
-        ],
-    },
     install_requires=requirements,
     license="MIT license",
     long_description=readme + '\n\n' + history,

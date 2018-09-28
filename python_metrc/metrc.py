@@ -58,28 +58,17 @@ class METRC:
 
     def _url(self, *args):
         path_comps = [mock._name for mock in self._chain(*args)]
-        url = "/".join(reversed(path_comps))
-
-        if self._append_slash:
-            url = url + "/"
-
-        return url
+        return "/".join(reversed(path_comps))
 
     def _request(self, method, kwargs=None):
         if not kwargs:
             kwargs = {}
 
-        if self._url() != self._parent:
-            self._endpoint._name = self._name
-            self._endpoint._parent = self._parent
+        self._endpoint._name = self._name
+        self._endpoint._parent = self._parent
 
         request = getattr(self._endpoint, method)
-        response = request(**kwargs)
-
-        if not response.status_code == 200:
-            response.raise_for_status()
-
-        return response
+        return request(**kwargs)
 
     def get(self):
         return self._request("GET")
