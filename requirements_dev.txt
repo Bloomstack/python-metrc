@@ -10,3 +10,5 @@ twine==1.10.0
 
 pytest==3.4.2
 pytest-runner==2.11.1
+certifi>=2022.12.7 # not directly required, pinned by Snyk to avoid a vulnerability
+pygments>=2.7.4 # not directly required, pinned by Snyk to avoid a vulnerability
